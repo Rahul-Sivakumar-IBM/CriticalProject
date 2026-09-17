@@ -8,7 +8,33 @@ packages:
   gitUsername: Rahul-Sivakumar-IBM
   gitBranch: main
 - name: JcHelloWorldAPI
+  version: "1.0"
   gitServerName: rahulsiv
   gitUrl: https://github.com/johnpcarter
   gitUsername: Rahul-Sivakumar-IBM
   gitTag: v1.0.0
+services:
+- serviceName: project.critical.integrations:DAF1
+  packages:
+  - name: CriticalProject
+    version: "1.0"
+  - name: JcHelloWorldAPI
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: pub.date:calculateDateDifference
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1202
+- serviceName: project.critical.referencedata:ref
+  packages:
+  - name: CriticalProject
+    version: "1.0"
+  - name: JcHelloWorldAPI
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
