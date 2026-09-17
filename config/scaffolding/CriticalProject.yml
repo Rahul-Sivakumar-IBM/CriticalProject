@@ -12,7 +12,7 @@ packages:
   gitServerName: rahulsiv
   gitUrl: https://github.com/johnpcarter
   gitUsername: Rahul-Sivakumar-IBM
-  gitTag: v1.0.0
+  gitBranch: main
 services:
 - serviceName: project.critical.integrations:DAF1
   packages:
